@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const section = document.createElement('div');
     section.setAttribute('class', 'row');
     board.appendChild(section);
-    
+
     for (a= 0; a<colnum; a++) {
       const section = document.createElement('div');
       section.setAttribute('class', 'col');
