@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const board = document.getElementById('board');
 
-  function getrandomColor(){
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  }
-
   for (i = 0; i<rownum; i++) {
     const section = document.createElement('div');
     section.setAttribute('class', 'row');
@@ -19,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function(){
       section.setAttribute('class', 'col');
       board.appendChild(section);
       section.addEventListener('click', () =>{
-        section.style.backgroundColor = getrandomColor();
       });
     }
   }
